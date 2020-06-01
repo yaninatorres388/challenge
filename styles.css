@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+
+}
+
+* 
+::after
+::before {
+    box-sizing: inherit;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.title {
+    font-size: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.TT {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1440px;
+    height: auto;
+    margin: 100px auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(4, 130px);
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.Supervisor {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    border-top: cyan;
+}
+
+.TeamBuilder {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    border-top: red;
+}
+
+.Calculator{
+    grid-column: 3;
+    grid-row: 2 / 4;
+    border-top: blue;
+}
+
+.Karma {
+    grid-column: 2;
+    grid-row: 3 / 5;
+    border-top: orange;
+}
+
+.Card {
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    border-top-style: outset;
+    border-top-width: thick;
+    box-shadow: 5px 9px 35px hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    align-self: flex-start;
+}
+
+.imagen {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+
+body {
+    margin: 70px 50px;
+}
+ 
+.wrapper {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(4, 250px);
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+        
+    .Supervisor {
+        grid-column: auto;
+        grid-row: 1 / 2;
+    }
+    .TeamBuilder {
+        grid-column: auto;
+        grid-row: 2 / 3;
+    }
+    .Karma {
+        grid-column: auto;
+        grid-row: 3 / 4;
+    }
+    .Calculator {
+       grid-column: auto;
+       grid-row: 4 / 5;
+    }
